@@ -542,6 +542,9 @@ button{
 .author-photo img{
     max-width: 100%;
     margin: 0 auto;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
 }
 .author-title{
     color: #3A3452;
@@ -940,11 +943,11 @@ button{
 }
 .menu-btn.active span:before{
     transform: rotate(45deg);
-    top: 0px;
+    top: 0;
 }
 .menu-btn.active span:after{
     transform: rotate(-45deg);
-    top: 0px;
+    top: 0;
 }
 .slick-dots li button:before{
     content: '';
@@ -1149,6 +1152,15 @@ button{
         max-width: 100%;
         box-shadow: none;
     }
+    .price__slider__item:hover{
+        background-position: 0;
+    }
+    .reviews__slider .reviews__slider__item{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
     .reviews__slider__item-title{
         font-size: 35px;
         line-height: 38px;
@@ -1207,7 +1219,7 @@ button{
         background-color: #43E8CA;
     }
     .reviews__slider__item{
-        padding: 20px 30px 30px;
+        padding: 30px;
     }
     .feedback__contacts{
         padding: 70px;

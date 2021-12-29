@@ -42,17 +42,22 @@ $(function(){
             }
         ]
     });
-
-        $('.team__slider').on('resize', function () {
-            let maxH = 0;
-            $('.team__slider__item').each(function(){
-                $(this).css('height','auto');
-                if ( $(this).height() > maxH ) {
-                    maxH = $(this).height();
-                }
-            });
-            $('.team__slider__item').height(maxH);
-        }).resize();
+    $('.team__slider').on('breakpoint', function(event, slick, breakpoint) {
+        resizeHeight('.team__slider__item');
+    });
+    function resizeHeight(className){
+        let maxH = 0;
+        $(className).each(function(){
+            $(this).css('height','auto');
+            if ( $(this).height() > maxH ) {
+                maxH = $(this).height();
+            }
+        });
+        $(className).height(maxH);
+    };
+    $(window).on('resize', function () {
+        resizeHeight('.team__slider__item');
+    }).resize();
 
 
     $('.price__slider').slick({
@@ -82,7 +87,12 @@ $(function(){
             },
         ]
     });
-
+    $('.price__slider').on('breakpoint', function(event, slick, breakpoint) {
+        resizeHeight('.price__slider__item');
+    });
+    $(window).on('resize', function () {
+        resizeHeight('.price__slider__item');
+    }).resize();
     $('.reviews__slider').slick({
         dots: false,
         arrows: true,
@@ -111,7 +121,12 @@ $(function(){
             },
         ]
     });
-
+    $('.reviews__slider').on('breakpoint', function(event, slick, breakpoint) {
+        resizeHeight('.reviews__slider__item');
+    });
+    $(window).on('resize', function () {
+        resizeHeight('.reviews__slider__item');
+    }).resize();
     $('.switch-btn').click(function(e){
 
         let $priceYear = $(this)
