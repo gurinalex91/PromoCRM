@@ -141,7 +141,6 @@ button{
 .header__image{
     text-align: center;
     max-width: 100%;
-    padding: 10px 15px;
 }
 .header__image img{
     width: 100%;
@@ -788,7 +787,7 @@ button{
 #bg2-1 {
     position: absolute;
     top: 162px;
-    left: 200px;
+    left: 100px;
 }
 #bg2-2 {
     position: absolute;
@@ -797,48 +796,19 @@ button{
 }
 #bg2-3 {
     position: absolute;
-    top: 543px;
-    left: -35px;
-}
-#bg2-4 {
-    position: absolute;
-    top: 800px;
-    left: 250px;
-}
-#bg2-5 {
-    position: absolute;
     top: 900px;
-    left: 1140px;
+    left: 1160px;
 }
-#bg2-6 {
-    position: absolute;
-    top: 970px;
-    left: 10px;
-}
-#bg2-7 {
+
+#bg2-4 {
     position: absolute;
     top: 2500px;
     left: 1150px;
 }
-#bg2-8 {
-    position: absolute;
-    top: 1600px;
-    left: 1300px;
-}
-#bg2-9 {
-    position: absolute;
-    top: 1800px;
-    left: 90px;
-}
-#bg2-10 {
+#bg2-5 {
     position: absolute;
     top: 2000px;
     left: -120px;
-}
-#bg2-11 {
-    position: absolute;
-    top: 2700px;
-    left: -130px;
 }
 /* background (blots) */
 #parallax-bg1 {
@@ -851,40 +821,26 @@ button{
 }
 #bg1-1 {
     position: absolute;
-    top: 365px;
-    left: -270px;
+    top: 543px;
+    left: -170px;
 }
+
 #bg1-2 {
-    position: absolute;
-    top: 440px;
-    left: 795px;
-}
-#bg1-3 {
     position: absolute;
     top: 900px;
     left: -220px;
 }
+#bg1-3 {
+    position: absolute;
+    top: 1000px;
+    left: 1300px;
+}
 #bg1-4 {
-    position: absolute;
-    top: 900px;
-    left: 620px;
-}
-#bg1-5 {
-    position: absolute;
-    top: 1250px;
-    left: 900px;
-}
-#bg1-6 {
-    position: absolute;
-    top: 1450px;
-    left: 600px;
-}
-#bg1-7 {
     position: absolute;
     top: 1850px;
     left: -290px;
 }
-#bg1-8 {
+#bg1-5 {
     position: absolute;
     top: 2050px;
     left: 470px;
